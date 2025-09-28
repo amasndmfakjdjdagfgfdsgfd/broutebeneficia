@@ -79,14 +79,15 @@
       gap: 10px;
       margin-bottom: 15px;
       width: 100%;
-      max-width: 270px;
+      max-width: 260px;
       margin-left: auto;
       margin-right: auto;
+      box-sizing: border-box;
     }
 
     .pin-input {
-      width: 40px;
-      height: 50px;
+      width: 36px;
+      height: 48px;
       text-align: center;
       font-size: 24px;
       border: 2px solid #ccc;
@@ -95,6 +96,7 @@
       color: #002147;
       outline: none;
       transition: border-color 0.3s;
+      box-sizing: border-box;
     }
 
     .pin-input:focus {
@@ -114,7 +116,7 @@
       font-weight: bold;
       cursor: pointer;
       width: 100%;
-      max-width: 270px;
+      max-width: 260px;
     }
 
     #error-message {
@@ -144,15 +146,17 @@
 
     @media (max-width: 480px) {
       .pin-container {
+        gap: 6px;
         max-width: 100%;
-        justify-content: space-between;
-        padding: 0 10px;
+        padding: 0 15px;
+        box-sizing: border-box;
       }
 
       .pin-input {
-        width: 42px;
-        height: 48px;
-        font-size: 22px;
+        width: 100%;
+        max-width: 38px;
+        height: 44px;
+        font-size: 20px;
       }
 
       #continuar {
